@@ -1,0 +1,110 @@
+.Footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-block: 2rem;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* social Media */
+.footerColumn .socialMedias {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.footerColumn .socialMedias .socialMedia i {
+    font-size: 22px;
+    color: #000;
+    opacity: .6;
+    transition: all .3s ease-in-out;
+}
+
+.footerColumn .socialMedias .socialMedia:hover i {
+    font-size: 22px;
+    color: tomato;
+    opacity: 1;
+}
+
+.footerColumn .footerColumnHeader {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footerColumn .footerColumnInfo,
+.footerColumnDesc {
+    font-weight: 600;
+    font-size: .9rem;
+    opacity: .7;
+}
+
+/* footer links */
+.footerColumn .footerColumnLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerColumn .footerColumnLinks i {
+    font-size: .9rem;
+    opacity: .7;
+}
+
+.footerColumn .footerColumnLinks .footerColumnLink {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: .9rem;
+    opacity: .7;
+    transition: all .3s ease-in-out;
+}
+
+.footerColumn .footerColumnLinks .footerColumnLink:hover {
+    color: tomato;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .Footer {
+        padding: 20px 80px 20px 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 20px;
+        padding-block: 2rem;
+        border-bottom: 1px solid #c2c2c2;
+    }
+
+    .footerColumn .footerColumnInfo,
+    .footerColumnDesc {
+        width: 70%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .Footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding-block: 2rem;
+        border-bottom: 1px solid #c2c2c2;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}

@@ -1,0 +1,199 @@
+.contactSectionHero {
+    height: 40vh;
+    background: url(../../images/about/hero2.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.contactSectionHero .contactUsTitle {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: end;
+    margin-right: 40px;
+    line-height: 40vh;
+}
+
+.contactHeader {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 1.5rem !important;
+}
+
+/* ---------------------- contactForm ----------------------- */
+.contactForm {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+}
+
+/* contactFormLeftBox */
+.contactFormLeftBox {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    padding: 1rem 2.5rem;
+    gap: 30px;
+    border-right: 1px solid #c2c2c2;
+}
+
+.contactFormLeftBox .contactBoxgroup {
+    display: flex;
+    gap: 10px;
+}
+
+.contactFormLeftBox .inputField {
+    padding: 0;
+}
+
+.contactFormLeftBox .contactSubmit {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* contactFormRightBox */
+.contactFormRightBox {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem;
+    row-gap: 2rem;
+}
+
+/* contactInfoRow */
+.contactInfoRow {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.contactInfoRow .contactInfoRowTitle {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.contactInfoRow .contactInfoRowSubtitle {
+    font-size: .8rem;
+    line-height: 22px;
+    opacity: .7;
+}
+
+.contactInfoRow .contactInfoRowIcon {
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1DA1F2;
+}
+
+.contactInfoRow .contactInfoRowIcon i {
+    padding: .5rem;
+    border-radius: 50%;
+    background-color: #1da0f242;
+}
+
+.contactInfoRow .contactInfoRowIcon span {
+    font-weight: 600;
+}
+
+
+/* FAQ */
+.FAQ {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    margin-top: 2rem !important;
+}
+
+/* FAQ left  */
+.FAQSmallTitle {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.FAQLargeTitle {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+/* faq right */
+.FAQRight {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.FAQDesc {
+    font-size: .8rem;
+    line-height: 22px;
+    opacity: .7;
+}
+
+.FAQs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.FAQs li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .placeInformationSection_InputBoxRow {
+        gap: 1rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .contactFormLeftBox .contactBoxgroup {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .contactForm {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .FAQ {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .contactFormLeftBox {
+        border-right: none;
+        padding-block: 2rem !important;
+    }
+
+    .contactFormRightBox {
+        border-top: 1px solid #c2c2c2;
+        padding-block: 2rem !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .contactFormLeftBox {
+        padding: 1rem 1rem;
+    }
+
+    .contactFormRightBox {
+        padding: 1rem 2rem;
+    }
+
+    .FAQLargeTitle {
+        font-size: 3rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}

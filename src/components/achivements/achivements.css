@@ -1,0 +1,60 @@
+.achivements{
+    display: flex;
+    /* border: 1px solid; */
+    justify-content:center;
+    gap: 20px;
+
+}
+.achivement{
+    height: 200px;
+    width: 200px;
+    /* border: .5px solid #1DA1F2; */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* border: .2px solid #1DA1F2; */
+}
+.achivement .achivementTitle{
+    font-size: 2rem;
+    /* color: #ff6347; */
+    color: #1DA1F2;
+}
+.achivement .achivementSubTitle{
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .achivement {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .achivements{    
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (max-width: 992px) {
+    .achivement {
+        height: 160px;
+        width: 160px;
+    }
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (max-width: 1200px) {} 

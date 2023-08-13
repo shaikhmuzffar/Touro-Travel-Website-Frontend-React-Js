@@ -1,0 +1,682 @@
+.categorySection {
+    background-color: #ffffffaf;
+
+}
+
+.categoryHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* categoryDate */
+.categoryDate {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.categoryDate h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.categoryDate .dayAndyear {
+    display: flex;
+    flex-direction: column;
+}
+
+.dayAndyear span:first-child {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.dayAndyear span:last-child {
+    font-size: .9rem;
+    font-weight: 500;
+    opacity: .7;
+}
+
+/* categoryFilter */
+.categoryFilter {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+}
+
+
+.selectField {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 5px;
+    padding-inline: 1rem;
+    border-left: 1px solid #c2c2c2;
+}
+
+.selectField:first-child {
+    border-left: none;
+    padding-inline-start: 0;
+}
+
+.selectField label {
+    font-size: .7rem;
+    font-weight: 600;
+    opacity: .6;
+}
+
+.selectField select {
+    font-size: .8rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+/* filterImage */
+.filterImage {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    margin-inline-end: 1rem;
+}
+
+.filterImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* filterBtn */
+.filterBtn {
+    height: 40px;
+}
+
+.filterBtn button {
+    height: 100%;
+    padding: 0 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: #1DA1F2;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* categoryWeather */
+.categoryWeather {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.categoryWeather .weatherimage {
+    width: 60px;
+    height: 60px;
+}
+
+.categoryWeather .weatherimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .5;
+}
+
+.categoryWeather .weatherInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.categoryWeather .weatherInfo .celcius h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.categoryWeather .weatherInfo .cityAndState {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+.cityAndState span:first-child {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.cityAndState span:last-child {
+    font-size: .9rem;
+    font-weight: 500;
+    opacity: .7;
+}
+
+/* ------------- categoryPlaces ---------------------- */
+.placesPage {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    gap: 3rem;
+}
+
+/* ------- left box ------- */
+.placesPage_Category {
+    background-color: #ecf8f960;
+    padding: 1.5rem;
+    height: fit-content;
+    position: sticky;
+    top: 70px;
+}
+
+
+.placesPage_Category_SectionHeader {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* placesPage_Category_typeOfPlace */
+.placesPage_Category_typeOfPlace {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftbox_container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-block: 20px;
+    border-bottom: 1px dashed #0000002f;
+}
+
+.typeOfPlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .9rem;
+
+}
+
+.typeOfPlace {
+    padding: 8px 20px;
+    border: 1px dashed;
+    border-radius: 4px;
+    opacity: .6;
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.typeOfPlace:hover,
+.typeOfPlace.active {
+    border: 1px solid transparent;
+    background-color: #1DA1F2;
+    color: #fff;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+/* placesPage_Category_typeOfPlace */
+.placesPage_Category_typeOfPlace_inputFied {
+    position: relative;
+}
+
+.placesPage_Category_typeOfPlace_inputFied small {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.placesPage_Category_typeOfPlace_inputFied input {
+    background-color: transparent;
+    padding: 22px 10px 10px;
+    width: 100%;
+    border-radius: 4px;
+    outline: #1DA1F2;
+}
+
+.placesPage_Category_priceRange .to {
+    text-align: center;
+}
+
+.placesPage_Category_priceRange>a {
+    margin-top: 10px;
+    border: 1px solid #1DA1F2;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+    padding: 10px 40px;
+    background-color: transparent;
+    color: #1DA1F2;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.placesPage_Category_priceRange>a:hover {
+    background-color: #0d86d1;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.placesPage_Category_priceRange a i {
+    padding-top: 2px;
+    font-size: .65rem;
+}
+
+/* ------- right box ------- */
+.placesPage_Places {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* placesPage_Place */
+.placesPage_Place {
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    gap: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.placesPage_PlaceImg {
+    width: 100%;
+    height: 100%;
+}
+
+.placesPage_PlaceImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placesPage_PlaceInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 0rem;
+    justify-content: space-evenly;
+}
+
+/* title */
+.placesPage_PlaceInfo_Title {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    border: 1px solid;
+    padding-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #c2c2c27e;
+}
+
+/* title>left */
+.placesPage_PlaceInfo_Title_Left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.placesPage_PlaceInfo_Title_Left_nameAndRating {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.placesPage_PlaceInfo_Title_Left_nameAndRating .name {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.placesPage_PlaceInfo_Title_Left_nameAndRating .rating {
+    display: flex;
+    align-items: center;
+    font-size: .65rem;
+    gap: 2px;
+}
+
+.placesPage_PlaceInfo_Title_Left_nameAndRating .rating i {
+    color: gold;
+}
+
+/* title>left>location */
+.placesPage_PlaceInfo_Title_Left_Location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1rem;
+    color: #1DA1F2;
+}
+
+.placesPage_PlaceInfo_Title_Left_Location span {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.placesPage_PlaceInfo_Title_Left_Location span:hover {
+    text-decoration: underline;
+}
+
+/* title>right */
+.placesPage_PlaceInfo_Title_Right_Rating {
+    display: flex;
+    flex-direction: column;
+    color: #1DA1F2;
+    align-items: center;
+    justify-content: center;
+}
+
+.placesPage_PlaceInfo_Title_Right_Rating .reviewsImg {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    gap: 2px;
+
+}
+
+.placesPage_PlaceInfo_Title_Right_Rating .reviewsImg img {
+    width: 18px;
+}
+
+.placesPage_PlaceInfo_Title_Right_Rating span:last-child {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.placesPage_PlaceInfo_Title_Right_Rating span:last-child:hover {
+    text-decoration: underline;
+}
+
+
+/* placesPage_PlaceInfo_Desc */
+.placesPage_PlaceInfo_Desc {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    align-items: center;
+    padding-block: 1rem;
+    padding-inline: .8rem;
+}
+
+.placesPage_PlaceInfo_Desc_Right {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.placesPage_PlaceInfo_Desc_Left {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    list-style: disc;
+}
+
+.placesPage_PlaceInfo_Desc_Left li {
+    width: 80%;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.placesPage_PlaceInfo_Desc_Right span:first-child {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #54B435;
+}
+
+
+.placesPage_PlaceInfo_Desc_Right span:last-child {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    text-transform: capitalize;
+    gap: 3px;
+    font-weight: 500;
+    opacity: .4;
+}
+
+.placesPage_PlaceInfo_Desc_Right span:last-child i {
+    font-size: 1rem;
+}
+
+/* placesPage_PlaceInfo_UserActions */
+.placesPage_PlaceInfo_UserActions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.placesPage_PlaceInfo_UserActions>span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #54B435;
+}
+
+.placesPage_PlaceInfo_UserActions a {
+    border: 1px solid transparent;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: .9rem;
+    padding: 10px 40px;
+    text-decoration: none;
+    background-color: #1DA1F2;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.placesPage_PlaceInfo_UserActions a:hover {
+    background-color: #0d86d1;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.placesPage_PlaceInfo_UserActions a i {
+    padding-top: 2px;
+    font-size: .65rem;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .placesPage_PlaceInfo_UserActions a {
+        padding: 10px 10px !important;
+        font-size: .8rem;
+        align-items: center;
+    }
+    .placesPage_PlaceInfo_Title_Left_Location{
+        gap: 4px;
+    }
+    .placesPage_PlaceInfo_Title_Left_Location span {
+        font-size: .7rem;
+        line-height: 10px;
+        padding-block-start:6px ;
+    }
+    .placesPage_PlaceInfo_Title_Left_Location i{
+        font-size: .8rem;
+    }
+    .placesPage_PlaceInfo_Desc_Right span:last-child {
+        font-size: .6rem !important;
+    }
+
+    .placesPage_PlaceInfo_Desc_Right {
+        gap: 5px;
+    }
+
+    .placesPage_PlaceInfo_Title_Left_nameAndRating .name {
+        font-size: 1rem;
+        white-space: nowrap;
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .placesPage_PlaceInfo_Title_Right_Rating {
+        gap: 10px !important;
+    }
+
+    .placesPage_PlaceInfo_Title_Right_Rating span:last-child {
+        font-size: .6rem;
+        font-weight: 600;
+    }
+    .placesPage_PlaceInfo_Desc_Right span:first-child {
+        font-size: 1rem !important;
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .categoryFilter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .filterImage {
+        display: none;
+    }
+
+    .selectField {
+        width: 100%;
+        border: 1px solid;
+        padding: .5rem;
+        border: none;
+        border-bottom: 1px solid #c2c2c2;
+    }
+
+    .filterBtn button {
+        height: 100%;
+        padding: 5px 20px;
+        align-self: flex-end;
+    }
+
+
+    .selectField select {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 700;
+        border: none;
+        outline: none;
+    }
+
+    .placesPage {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+
+    .placesPage_Category {
+        position: relative;
+        top: 0;
+    }
+
+    .placesPage_PlaceInfo_Desc {
+        padding-block: 1rem;
+        padding-inline: 1rem;
+    }
+
+    .placesPage_Category_priceRange>a {
+        align-self: flex-end;
+    }
+}
+
+
+/* place */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .categoryFilter {
+        order: 1;
+    }
+
+    .placesPage_Place {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .placesPage_PlaceInfo {
+        padding: 1rem;
+    }
+
+    .typeOfPlace {
+        padding: 0px 20px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .placesPage_PlaceInfo_Title_Right_Rating {
+        gap: 15px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .categoryHeader {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .placesPage_PlaceInfo_Desc {
+        padding-block: .5rem;
+        padding-inline: .5rem;
+    }
+
+    .placesPage_PlaceInfo_UserActions a {
+        padding: 10px 30px;
+    }
+
+    .placesPage_PlaceInfo_Desc_Right span:first-child {
+        font-size: 1.4rem;
+    }
+
+    .placesPage_PlaceInfo_Desc_Right span:last-child {
+        font-size: .8rem;
+    }
+
+    .placesPage_Category {
+        padding: 1rem;
+    }
+
+    .placesPage_Category_priceRange>a {
+        padding: 10px 10px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .categoryFilter {
+        padding: .8rem;
+    }
+
+    .categoryWeather .weatherInfo .celcius h3,
+    .categoryDate h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .placesPage_Place {
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+        gap: 1rem;
+    }
+
+    .placesPage {
+        gap: 2rem;
+    }
+}

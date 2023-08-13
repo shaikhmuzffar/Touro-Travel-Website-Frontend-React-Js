@@ -1,0 +1,217 @@
+.features {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    justify-content: space-around;
+}
+
+
+
+/* featureInfo */
+.featureInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.featureInfo h2 {
+    font-size: 2.5rem;
+}
+
+.featureInfo p {
+    font-size: .9rem;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+
+/* feature image */
+
+.featureImage {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.featureImage img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 20;
+}
+
+.imgCircle {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: #FAE392;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
+    z-index: 10;
+}
+
+/* featureContainer */
+
+.featureContainer {
+    display: grid;
+    row-gap: 20px;
+    margin-top: 30px !important;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.featureContainer .featureItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.featureContainer .featureItem .featureItemImg {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #C2C2C2;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.featureContainer .featureItem .featureItemImg img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.featureContainer .featureItem span {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 400px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .featureImage {
+        position: relative;
+        width: 400px ;
+        height: 400px ;
+    }
+    .featureInfo h2 {
+        font-size: 2rem ;
+        text-align: center;
+    }
+    .featureInfo p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: 100% ;
+    }
+    .featureContainer {
+        gap: 20px;
+    }
+    .featureContainer .featureItem {
+        display: flex;
+        flex-direction: column;
+    }
+    .featureContainer .featureItem .featureItemImg {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .featureContainer .featureItem .featureItemImg img {
+        width: 65px ;
+        height: 65px ;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .features {
+        display: grid;
+        grid-template-columns:1fr !important;
+    }
+    .featureInfo{
+        padding: 20px ;
+    }
+    .featureInfo h2 {
+        font-size: 3rem ;
+        text-align: center;
+    }
+    .featureInfo p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: 100% ;
+    }
+  
+    .featureImage{
+        margin: auto;
+    }
+    .featureContainer {
+        width: 50%;
+        margin: auto;
+    }
+   
+.featureContainer .featureItem .featureItemImg {
+    width: 80px ;
+    height: 80px ;
+}
+.featureContainer .featureItem .featureItemImg img {
+    width: 40px;
+    height: 40px;
+}
+.featureContainer .featureItem span {
+    font-size: 1.2rem ;
+}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .features {
+        display: grid;
+        grid-template-columns: 6fr 6fr ;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .featureInfo {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .featureImage {
+        position: relative;
+        width: 400px;
+        height: 400px;
+    }
+    .imgCircle {
+        width: 75%;
+        height: 75%;
+    }
+    .featureInfo h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .featureInfo p {
+        font-size: .9rem;
+        line-height: 25px;
+        font-weight: 500;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        opacity: 0.6;
+    }
+    .featureContainer{
+        row-gap: 10px;
+    }
+
+    .featureContainer .featureItem span {
+        font-weight: 700;
+        font-size: .9rem;
+    }
+    .featureContainer .featureItem .featureItemImg {
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}

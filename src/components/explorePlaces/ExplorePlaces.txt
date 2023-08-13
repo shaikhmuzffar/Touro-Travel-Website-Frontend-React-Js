@@ -1,0 +1,29 @@
+import React from "react"
+import place1 from '../../images/popularPlaces/island1.jpg'
+import place2 from '../../images/popularPlaces/island2.jpg'
+import place3 from '../../images/popularPlaces/island3.jpg'
+import place4 from '../../images/popularPlaces/island4.jpg'
+import place5 from '../../images/popularPlaces/island5.jpg'
+import place6 from '../../images/popularPlaces/island6.jpg'
+import Place from '../place/Place'
+const explorerPlaces={
+    
+}
+export default function ExplorePlaces() {
+    return (
+        <>
+            <div className="popularPlacesSection">
+                <div className="popularPlaces container">
+                    <div className="popularPlacescontainer">
+                        <Place p={place1} pn="Siasconset Beach" pl="indonesia" pr="4.7" pd="16 july -23 july, 2023" tp={1980} />
+                        <Place p={place2} pn="Horseshoe Bay" pl="island" pr="4.9" pd="16 july -20 july, 2023" tp={1240} />
+                        <Place p={place4} pn="Virgin Gorda" pl="japan" pr="4.5" pd="16 july -21 july, 2023" tp={2180}  />
+                        <Place p={place3} pn="Hawai islands" pl="hawai" pr="4.8" pd="16 july -18 july, 2023" tp={2220}  />
+                        <Place p={place5} pn="Bahamas Beach" pl="Bahamas" pr="4.9" pd="16 july -20 july, 2023" tp={2160}  />
+                        <Place p={place6} pn="Virgin Gorda" pl="japan" pr="4.8" pd="16 july -19 july, 2023" tp={1990}  />
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}               

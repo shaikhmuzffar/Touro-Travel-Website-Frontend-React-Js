@@ -1,0 +1,1165 @@
+import React from "react"
+import './placeInfo.css'
+
+import Navbar from '../../components/navbar/Navbar'
+import italy from '../../images/placeInfo/italy.jpg'
+import hotel1 from '../../images/placeInfo/hotel1.jpg'
+import hotel2 from '../../images/placeInfo/hotel2.jpg'
+import hotel3 from '../../images/placeInfo/hotel3.jpg'
+import hotel4 from '../../images/placeInfo/hotel4.jpg'
+import italyMap from '../../images/placeInfo/italyMap2.jpg'
+import italy1 from '../../images/placeInfo/italy1.jpg'
+import italy2 from '../../images/placeInfo/italy2.jpg'
+import italy3 from '../../images/placeInfo/italy3.jpg'
+import italy4 from '../../images/placeInfo/italy4.jpg'
+import italy5 from '../../images/placeInfo/italy5.jpg'
+import italy6 from '../../images/placeInfo/italy6.jpg'
+import italy7 from '../../images/placeInfo/italy7.jpg'
+import italy8 from '../../images/placeInfo/italy8.jpg'
+export default function PlaceInfo() {
+    return (
+        <>
+            <div className="placeInfoSection">
+                <Navbar active="places"/>
+                <div className="placeInformation container marginTop8">
+                    {/* pi left box */}
+                    <div className="piLeftBox">
+                        <div className="piPlaceName">
+                            <h2>Holiday Package: Italy</h2>
+                            <span className="piPlaceRating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <span className="piReviews">
+                                (89 Reviews)
+                            </span>
+                        </div>
+                        <div className="piPlaceinfo">
+                            <div className="piPlaceImage">
+                                <img src={italy} alt="" />
+                            </div>
+                            <div className="piPlaceDetails">
+                                <ul>
+                                    <li>places</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                                    <li>paris</li>
+                                </ul>
+                                <div className="piPlaceDetailsPrice">
+                                    <span>$ 1, 400.00</span>
+                                    <span>/person</span>
+                                </div>
+                                <span className="piPlaceDetailsDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolores.</span>
+                                <div className="piPlaceDetailsFeatures">
+                                    <span className="piPlaceDetailsFeature"><i class="fa-solid fa-calendar"></i> 24 april - 3 may</span>
+                                    <span className="piPlaceDetailsFeature"><i class="fa-solid fa-bed"></i>Breakfast at the hotel</span>
+                                    <span className="piPlaceDetailsFeature"><i class="fa-solid fa-comment"></i> English only</span>
+                                    <span className="piPlaceDetailsFeature"><i class="fa-solid fa-bus"></i> Comfortable bus</span>
+                                    <span className="piPlaceDetailsFeature"><i class="fa-solid fa-camera-retro"></i> Photo report</span>
+                                </div>
+                                <button className="piPlaceDetailsButton btn-Primary">Book Now</button>
+                            </div>
+                        </div>
+                        <div className="hotelNearBy">
+                            <h3 className="placeInformationSectionTitle">hotels</h3>
+                            <div className="hotels">
+                                <div className="hotel">
+                                    <div className="hotelImage">
+                                        <img src={hotel1} alt="" />
+                                    </div>
+                                    <div className="hotelInfo">
+                                        <span className="hotelName">Hotel lugano</span>
+                                        <span className="hotelLocation">
+                                            723 street,paris
+                                        </span>
+                                        <span className="hotelRating">
+                                            <i class="fa-regular fa-star-half-stroke"></i>4.8
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="hotel">
+                                    <div className="hotelImage">
+                                        <img src={hotel2} alt="" />
+                                    </div>
+                                    <div className="hotelInfo">
+                                        <span className="hotelName">Hotel lotus</span>
+                                        <span className="hotelLocation">
+                                            723 street,paris
+                                        </span>
+                                        <span className="hotelRating">
+                                            <i class="fa-regular fa-star-half-stroke"></i>4.6
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="hotel">
+                                    <div className="hotelImage">
+                                        <img src={hotel3} alt="" />
+                                    </div>
+                                    <div className="hotelInfo">
+                                        <span className="hotelName">Hotel BlueStone</span>
+                                        <span className="hotelLocation">
+                                            723 street,paris
+                                        </span>
+                                        <span className="hotelRating">
+                                            <i class="fa-regular fa-star-half-stroke"></i>4.2
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="hotel">
+                                    <div className="hotelImage">
+                                        <img src={hotel4} alt="" />
+                                    </div>
+                                    <div className="hotelInfo">
+                                        <span className="hotelName">Courtyard Marriot</span>
+                                        <span className="hotelLocation">
+                                            723 street,paris
+                                        </span>
+                                        <span className="hotelRating">
+                                            <i class="fa-regular fa-star-half-stroke"></i>4.5
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* pi right box */}
+                    <div className="piRightBox">
+                        <h3 className="placeInformationSectionTitle">Citis we will visit</h3>
+                        <div className="visitingCities">
+                            <div className="visitingCity">
+                                <div className="largeDot">
+                                    <div className="smallDot"></div>
+                                </div>
+                                <span>Venice</span>
+                            </div>
+                            <div className="line"></div>
+                            <div className="visitingCity">
+                                <div className="largeDot">
+                                    <div className="smallDot"></div>
+                                </div>
+                                <span>Florence</span>
+                            </div>
+                            <div className="line"></div>
+                            <div className="visitingCity">
+                                <div className="largeDot">
+                                    <div className="smallDot"></div>
+                                </div>
+                                <span>Rome</span>
+                            </div>
+                            <div className="line"></div>
+                            <div className="visitingCity">
+                                <div className="largeDot">
+                                    <div className="smallDot"></div>
+                                </div>
+                                <span>Sorrento</span>
+                            </div>
+                        </div>
+                        <div className="italyMap">
+                            <img src={italyMap} alt="" width="200px" />
+                        </div>
+                        <h3 className="placeInformationSectionTitle">Day 9 - Roma</h3>
+                        <p className="placeInformationSectionTitleDescription">After breakfas, we'll take you through this facinating city of ornate places, lyrical, waterways, churches and impressive architecture.
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                        </p>
+                        <div className="vistingCityImages">
+                            <div className="vistingCityImage">
+                                <img src={italy1} alt="" />
+                            </div>
+                            <div className="vistingCityImage">
+                                <img src={italy2} alt="" />
+                            </div>
+                            <div className="vistingCityImage">
+                                <img src={italy3} alt="" />
+                            </div>
+                            <div className="vistingCityImage">
+                                <img src={italy4} alt="" />
+                            </div>
+                            <div className="vistingCityImage">
+                                <img src={italy5} alt="" />
+                            </div>
+                            <div className="vistingCityImage">
+                                <img src={italy6} alt="" />
+                            </div>
+                            <div className="vistingCityImage">
+                                <img src={italy7} alt="" />
+                            </div>
+                            <div className="vistingCityImage">
+                                <img src={italy8} alt="" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+
+
+
+
+---------------------------- css
+
+.categorySection {
+    background-color: #ffffffaf;
+
+}
+
+.categoryHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* categoryDate */
+.categoryDate {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.categoryDate h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.categoryDate .dayAndyear {
+    display: flex;
+    flex-direction: column;
+}
+
+.dayAndyear span:first-child {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.dayAndyear span:last-child {
+    font-size: .9rem;
+    font-weight: 500;
+    opacity: .7;
+}
+
+/* categoryFilter */
+.categoryFilter {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+}
+
+
+.selectField {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 5px;
+    padding-inline: 1rem;
+    border-left: 1px solid #c2c2c2;
+}
+
+.selectField:first-child {
+    border-left: none;
+    padding-inline-start: 0;
+}
+
+.selectField label {
+    font-size: .7rem;
+    font-weight: 600;
+    opacity: .6;
+}
+
+.selectField select {
+    font-size: .8rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+/* filterImage */
+.filterImage {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    margin-inline-end: 1rem;
+}
+
+.filterImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* filterBtn */
+.filterBtn {
+    height: 40px;
+}
+
+.filterBtn button {
+    height: 100%;
+    padding: 0 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: #1DA1F2;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* categoryWeather */
+.categoryWeather {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.categoryWeather .weatherimage {
+    width: 60px;
+    height: 60px;
+}
+
+.categoryWeather .weatherimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .5;
+}
+
+.categoryWeather .weatherInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.categoryWeather .weatherInfo .celcius h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.categoryWeather .weatherInfo .cityAndState {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+.cityAndState span:first-child {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.cityAndState span:last-child {
+    font-size: .9rem;
+    font-weight: 500;
+    opacity: .7;
+}
+
+/* ------------- categoryPlaces ---------------------- */
+.placesPage {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    gap: 3rem;
+}
+
+/* ------- left box ------- */
+.placesPage_Category {
+    background-color: #ecf8f960;
+    padding: 1.5rem;
+    height: fit-content;
+    position: sticky;
+    top: 70px;
+}
+
+
+.placesPage_Category_SectionHeader {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* placesPage_Category_typeOfPlace */
+.placesPage_Category_typeOfPlace {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftbox_container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-block: 20px;
+    border-bottom: 1px dashed #0000002f;
+}
+
+.typeOfPlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .9rem;
+
+}
+
+.typeOfPlace {
+    padding: 8px 20px;
+    border: 1px dashed;
+    border-radius: 4px;
+    opacity: .6;
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.typeOfPlace:hover,
+.typeOfPlace.active {
+    border: 1px solid transparent;
+    background-color: #1DA1F2;
+    color: #fff;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+/* placesPage_Category_typeOfPlace */
+.placesPage_Category_typeOfPlace_inputFied {
+    position: relative;
+}
+
+.placesPage_Category_typeOfPlace_inputFied small {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.placesPage_Category_typeOfPlace_inputFied input {
+    background-color: transparent;
+    padding: 22px 10px 10px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.placesPage_Category_priceRange .to {
+    text-align: center;
+}
+
+.placesPage_Category_priceRange>a {
+    margin-top: 10px;
+    border: 1px solid #1DA1F2;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+    padding: 10px 40px;
+    background-color: transparent;
+    color: #1DA1F2;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.placesPage_Category_priceRange>a:hover {
+    background-color: #0d86d1;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.placesPage_Category_priceRange a i {
+    padding-top: 2px;
+    font-size: .65rem;
+}
+
+/* ------- right box ------- */
+.placesPage_Places {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* placesPage_Place */
+.placesPage_Place {
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    gap: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.placesPage_PlaceImg {
+    width: 100%;
+    height: 100%;
+}
+
+.placesPage_PlaceImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placesPage_PlaceInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 0rem;
+    justify-content: space-evenly;
+}
+
+/* title */
+.placesPage_PlaceInfo_Title {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    border: 1px solid;
+    padding-bottom: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #c2c2c27e;
+}
+
+/* title>left */
+.placesPage_PlaceInfo_Title_Left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.placesPage_PlaceInfo_Title_Left_nameAndRating {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.placesPage_PlaceInfo_Title_Left_nameAndRating .name {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.placesPage_PlaceInfo_Title_Left_nameAndRating .rating {
+    display: flex;
+    align-items: center;
+    font-size: .65rem;
+    gap: 2px;
+}
+
+.placesPage_PlaceInfo_Title_Left_nameAndRating .rating i {
+    color: gold;
+}
+
+/* title>left>location */
+.placesPage_PlaceInfo_Title_Left_Location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1rem;
+    color: #1DA1F2;
+}
+
+.placesPage_PlaceInfo_Title_Left_Location span {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.placesPage_PlaceInfo_Title_Left_Location span:hover {
+    text-decoration: underline;
+}
+
+/* title>right */
+.placesPage_PlaceInfo_Title_Right_Rating {
+    display: flex;
+    flex-direction: column;
+    color: #1DA1F2;
+    align-items: center;
+    justify-content: center;
+}
+
+.placesPage_PlaceInfo_Title_Right_Rating .reviewsImg {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    gap: 2px;
+
+}
+
+.placesPage_PlaceInfo_Title_Right_Rating .reviewsImg img {
+    width: 18px;
+}
+
+.placesPage_PlaceInfo_Title_Right_Rating span:last-child {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.placesPage_PlaceInfo_Title_Right_Rating span:last-child:hover {
+    text-decoration: underline;
+}
+
+
+/* placesPage_PlaceInfo_Desc */
+.placesPage_PlaceInfo_Desc {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    align-items: center;
+    padding-block: 1rem;
+    padding-inline: .8rem;
+}
+
+.placesPage_PlaceInfo_Desc_Right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.placesPage_PlaceInfo_Desc_Left {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    list-style: disc;
+}
+
+.placesPage_PlaceInfo_Desc_Left li {
+    width: 80%;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.placesPage_PlaceInfo_Desc_Right span:first-child {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #54B435;
+}
+
+.placesPage_PlaceInfo_Desc_Right span:last-child {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    text-transform: capitalize;
+    gap: 3px;
+    font-weight: 500;
+    opacity: .4;
+}
+
+.placesPage_PlaceInfo_Desc_Right span:last-child i {
+    font-size: 1rem;
+}
+
+/* placesPage_PlaceInfo_UserActions */
+.placesPage_PlaceInfo_UserActions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.placesPage_PlaceInfo_UserActions>span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #54B435;
+}
+
+.placesPage_PlaceInfo_UserActions a {
+    border: 1px solid transparent;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: .9rem;
+    padding: 10px 40px;
+    text-decoration: none;
+    background-color: #1DA1F2;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.placesPage_PlaceInfo_UserActions a:hover {
+    background-color: #0d86d1;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.placesPage_PlaceInfo_UserActions a i {
+    padding-top: 2px;
+    font-size: .65rem;
+}
+
+
+@media only screen and (max-width: 400px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .categoryFilter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .filterImage {
+        display: none;
+    }
+
+    .selectField {
+        width: 100%;
+        border: 1px solid;
+        padding: .5rem;
+        border: none;
+        border-bottom: 1px solid #c2c2c2;
+    }
+
+    .filterBtn button {
+        height: 100%;
+        padding: 5px 20px;
+        align-self: flex-end;
+    }
+
+
+    .selectField select {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 700;
+        border: none;
+        outline: none;
+    }
+}
+
+
+/* place */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .categoryFilter {
+        order: 1;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .categoryHeader {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .categoryFilter {
+        padding: .8rem;
+    }
+
+    .categoryWeather .weatherInfo .celcius h3,
+    .categoryDate h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+/ place info css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.placeInfoSection{
+    position: relative;
+    width: 100%;
+}
+/* placeInfo */
+.placeInformation{
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid #c2c2c2;
+
+}
+/* ------------ piLeftBox ---------------*/
+.placeInformation .piLeftBox{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 20px;
+}
+/* piPlaceName */
+.piPlaceName{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.piPlaceName .piPlaceRating{
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+}
+.piPlaceName .piPlaceRating i{
+    font-size: .8rem;
+    color: orange;
+}
+.piPlaceName .piReviews{
+    font-size: .8rem;
+    font-weight: 500;
+    opacity: .7;
+}
+
+
+
+/* piPlaceinfo */
+.piPlaceinfo{
+    display: flex;
+    gap: 25px;
+}
+.piPlaceinfo .piPlaceImage{
+    flex-basis: 35%;
+    height: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.piPlaceinfo .piPlaceImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* piPlaceDetails */
+.piPlaceinfo .piPlaceDetails{
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+}
+
+.piPlaceDetails ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 6px;
+}
+.piPlaceDetails ul li{
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: orange;
+}
+.piPlaceDetails ul li>i{
+    font-size: .5rem;
+}
+
+.piPlaceDetailsPrice{
+    display: flex;
+    align-items:flex-end;
+    column-gap: 4px;
+}
+.piPlaceDetailsPrice span:first-child{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 25px;
+}
+.piPlaceDetailsPrice span:last-child{
+    font-size: .8rem;
+    font-weight: 600;
+}
+.piPlaceDetailsDesc{
+    font-size: .8rem;
+    font-weight: 400;
+    opacity: .8;
+    width: 75%;
+}
+.piPlaceDetailsFeatures{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+}
+.piPlaceDetailsFeatures .piPlaceDetailsFeature{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-size: .85rem;
+    font-weight: 600;
+    opacity: .5;
+}
+.piPlaceDetailsFeatures .piPlaceDetailsFeature i{
+    font-size: 1rem;
+}
+
+/* ----- hotels -----  */
+.hotelNearBy{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+/* placeInfo Title */
+.placeInformationSectionTitle{
+    font-size: 1.1rem;
+}
+.placeInformationSectionTitleDescription{
+    font-size: .9rem;
+    line-height: 22px;
+    font-weight: 500;
+    opacity: .7;
+    position: relative;
+}
+.placeInformationSectionTitleDescription span{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 1.2rem;
+    color: #1DA1F2;
+}
+.hotels{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+
+}
+.hotel{
+    display: flex;
+    column-gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(100,100,111,0.2) 0px 5px 10px 0px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.hotelImage{
+    flex-basis: 25%;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.hotelInfo{
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.hotelName{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.hotelLocation{
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    opacity: .7;
+}
+/* hotel rating */
+.hotelRating{
+    position: absolute;
+    display: flex;
+    column-gap: 3px;
+    font-size: .8rem;
+    font-weight: 600;
+    top: 20px;
+    right: 20px;
+    align-items: center;
+
+}
+.hotelRating i{
+    color: orange;
+    font-size: .8rem;
+}
+.hotelImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ------------- piRightBox ---------------- */
+
+.placeInformation .piRightBox{
+    flex-basis: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 1.5rem;
+    background-color: #fff;
+}
+.visitingCities{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    transform: scale(.9);
+    margin-bottom: 20px;
+}
+.visitingCity{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    }
+.visitingCity .largeDot{
+    height: 25px;
+    width: 25px;
+    background-color:#a7ecee67 ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.visitingCity .smallDot{
+    height: 8px;
+    width: 8px;
+    background-color:#1DA1F2 ;
+    border-radius: 50%;
+}
+.visitingCity span{
+    position: absolute;
+    font-size: .7rem;
+    font-weight: 600;
+    margin-top: 5px;
+    top: 100%;
+}
+
+/* line */
+.visitingCities .line{
+    width: 50px;
+    height: 1px;
+    /* background-color: #1DA1F2; */
+    background-color: transparent;
+    opacity: .5;
+    border-top: 1px solid #1DA1F2;
+}
+
+/* --------- italyMap ---------- */
+.italyMap{
+    width: 100%;
+    height: 280px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    opacity: .7;
+}
+.italyMap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* vistingCityImages */
+.vistingCityImages{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.vistingCityImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.vistingCityImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .vistingCityImages {
+        grid-template-columns: repeat(2,100px) !important;
+        gap: 20px;
+        margin: auto;
+    }
+    .piPlaceinfo .piPlaceImage img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .placeInformation .piLeftBox ,.placeInformation .piRightBox {
+        padding: 0px !important;
+    }
+    .hotels {
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        gap: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .placeInformation{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .piPlaceinfo .piPlaceImage img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .vistingCityImages {
+        grid-template-columns: repeat(3,100px);
+        gap: 20px;
+        margin: auto;
+    }
+    .placeInformationSectionTitleDescription {
+        font-size: .9rem;
+        line-height: 25px;
+        font-weight: 500;
+        opacity: .7;
+        position: relative;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .placeInformation .piLeftBox {
+        padding: 10px;
+    }
+    .placeInformation .piRightBox {
+        padding: 10px;
+    }
+}
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (max-width: 992px) {
+    .piPlaceinfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .hotel {
+        flex-direction: column;
+    }
+    .hotelImage{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .hotelInfo{
+        width: 100%;
+        padding: 10px;
+    }
+    .hotelName {
+        font-size: 1.2rem;
+    }
+    .hotelLocation {
+        font-size: 1rem;
+    }
+    .placeInformationSectionTitle {
+        font-size: 1.8rem;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (max-width: 1200px) {} 

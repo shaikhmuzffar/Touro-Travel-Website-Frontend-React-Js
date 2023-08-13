@@ -1,0 +1,87 @@
+import React from "react"
+import './popularPlaces.css'
+import place1 from '../../images/popularPlaces/island1.jpg'
+import place2 from '../../images/popularPlaces/island2.jpg'
+import place3 from '../../images/popularPlaces/island3.jpg'
+import place4 from '../../images/popularPlaces/island4.jpg'
+import SectionHeading from '../sectionHeading/SectionHeading'
+import Place from '../place/Place'
+
+
+
+export default function PopularPlaces(props) {
+    // const places = [
+    //     {
+    //         place: place1,
+    //         placeName: "Siasconset Beach",
+    //         placeLocation: "island",
+    //         placeRating: "4.9"
+    //     },
+    //     {
+    //         place: place2,
+    //         placeName: "Horseshoe Bay",
+    //         placeLocation: "indonesia",
+    //         placeRating: "4.7"
+    //     },
+    //     {
+    //         place: place3,
+    //         placeName: "Virgin Gorda",
+    //         placeLocation: "japan",
+    //         placeRating: "4.8"
+    //     },
+    // ];
+    return (
+        <>
+{/* 
+            <div className="popularPlacesSection">
+                <div className="popularPlaces container">
+                    <div className="popularPlacescontainer">
+                        <Place p={place1} pn="Siasconset Beach" pl="indonesia" pr="4.7" pd="16 july -23 july, 2023" tp={1980} />
+                        <Place p={place2} pn="Horseshoe Bay" pl="island" pr="4.9" pd="16 july -20 july, 2023" tp={1240} />
+                        <Place p={place4} pn="Virgin Gorda" pl="japan" pr="4.8" pd="16 july -21 july, 2023" tp={2180} />
+                    </div>
+
+                </div>
+            </div> */}
+        </>
+    )
+}
+
+
+
+
+
+import React, { useState } from "react"
+import './popularPlaces.css'
+import SectionHeading from '../sectionHeading/SectionHeading'
+import Beach from "../places/Beach"
+import { Outlet } from "react-router-dom"
+
+
+
+
+///using router links
+
+export default function PopularPlaces(props) {
+    const [defaultLink,setDefaultLink]=useState(true)
+    return (
+        <>
+            <SectionHeading
+                heading="Popular Places"
+                menuItem1="Beach"
+                menuItem1Link="beaches"
+                menuItem2="Mountain"
+                menuItem2Link="mountains"
+                menuItem3="waterfall"
+                menuItem3Link="waterfalls"
+                menuItem4="Historic"
+                menuItem4Link="historic"
+                setDefaultLink={setDefaultLink}
+            />
+            <Outlet/>
+            {
+            defaultLink?<Beach/>:<></>
+            }
+        </>
+    )
+}

@@ -1,0 +1,120 @@
+.sectionHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sectionHeading h3 {
+    font-size: 1.8rem;
+}
+
+
+/* section Heading Links */
+
+
+
+.sectionHeading .sectionHeadingLinks {
+    display: flex;
+    flex-basis: 60%;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 20px;
+}
+
+
+
+/* section Heading Links */
+.sectionHeading .sectionHeadingLinks .sectionHeadingMenu {
+    display: flex;
+    align-items: center;
+    flex-basis: 80%;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.sectionHeadingMenu .Link {
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.6;
+    transition: all .3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+}
+
+.sectionHeadingMenu .Link:hover {
+    color: tomato;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+.sectionHeadingMenu .Link.active::after {
+    content: "";
+    position: absolute;
+    opacity: 1;
+    height: 3px;
+    border-radius: 3px;
+    width: 50%;
+    background-color: tomato;
+    top: 125%;
+    left: 0;
+    transition: width .3s ease-in-out;
+}
+
+.sectionHeadingMenu .Link.active:hover::after {
+    width: 80%;
+}
+
+/* section Heading view all */
+
+
+.sectionHeading .viewAll {
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 700;
+    color: tomato;
+}
+
+@media only screen and (max-width: 400px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .sectionHeading h3 {
+        font-size: 1.5rem;
+    }
+    .sectionHeadingMenu .Link,.sectionHeading .viewAll {
+        font-size: .8rem !important;
+        flex-wrap: wrap;
+    }
+    .sectionHeading .sectionHeadingLinks {
+        gap: 0;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .sectionHeading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionHeading .sectionHeadingLinks {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .sectionHeadingMenu .Link,.sectionHeading .viewAll {
+        font-size: 1.2rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}

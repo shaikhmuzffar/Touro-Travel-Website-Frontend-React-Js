@@ -1,0 +1,56 @@
+import React from 'react'
+import './sectionHeading.css'
+import { Link } from 'react-router-dom'
+export default function SectionHeading(props) {
+    return (
+        <>
+            <div className="sectionHeadingSection marginTop4">
+                <div className="sectionHeading container">
+                    <h3 className='sectionHeadingTitle'>{props.heading}</h3>
+                    <div className="sectionHeadingLinks">
+                        <ul className="sectionHeadingMenu">
+                            <li><Link className='Link active' to="#">{props.menuItem1}</Link></li>
+                            <li><Link className='Link' to="#">{props.menuItem2}</Link></li>
+                            <li><Link className='Link' to="#">{props.menuItem3}</Link></li>
+                            <li><Link className='Link' to="#">{props.menuItem4}</Link></li>
+                        </ul>
+                        <Link className='viewAll' to="#">View all</Link>
+                    </div>
+                </div>
+            </div>
+        </>
+
+    )
+}
+
+
+
+
+
+/using router links
+
+import React from 'react'
+import './sectionHeading.css'
+import { NavLink } from 'react-router-dom'
+export default function SectionHeading(props) {
+    return (
+        <>
+            <div className="sectionHeadingSection marginTop4">
+                <div className="sectionHeading container">
+                    <h3 className='sectionHeadingTitle'>{props.heading}</h3>
+                    <div className="sectionHeadingLinks">
+                        <ul className="sectionHeadingMenu">
+                            <li><NavLink className="Link" to={props.menuItem1Link} onClick={()=>props.setDefaultLink(false)} >{props.menuItem1}</NavLink></li>
+                            <li><NavLink className='Link' to={props.menuItem2Link} onClick={()=>props.setDefaultLink(false)} >{props.menuItem2}</NavLink></li>
+                            <li><NavLink className='Link' to={props.menuItem3Link} onClick={()=>props.setDefaultLink(false)} >{props.menuItem3}</NavLink></li>
+                            <li><NavLink className='Link' to={props.menuItem4Link} onClick={()=>props.setDefaultLink(false)} >{props.menuItem4}</NavLink></li>
+                        </ul>
+                        <NavLink className='viewAll' to="/places">View all</NavLink>
+                    </div>
+                </div>
+            </div>
+        </>
+
+    )
+}
+

@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    height: 100%;
+    width: 101%;
+    display: none;
+    /* background: linear-gradient(to left,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0),
+    rgba(255,255,255,0),
+    rgba(255,255,255,0),
+    rgba(255,255,255,0),
+    rgba(255,255,255,0),
+    rgba(255,255,255,0),
+    rgba(255,255,255,0),
+    rgba(255,255,255,0),
+    rgba(255,255,255,.1),
+    rgba(255,255,255,.2),
+    rgba(255,255,255,.4),
+    rgba(255,255,255,.3),
+    rgba(255,255,255,.5),
+    rgba(255,255,255,.6),
+    rgba(255,255,255,.7),
+    rgba(255,255,255,.8),
+    rgba(255,255,255,.9),
+    rgba(255,255,255,1)
+    ); */
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, .75),
+            rgba(255, 255, 255, .25),
+            rgba(255, 255, 255, 0));
+
+}
+
+/* hero img */
+
+.heroImg {
+    width: 80%;
+    position: relative;
+    margin-left: 2rem;
+}
+
+.heroImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.heroImg .imgCircle {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    z-index: -1;
+    background-color: #FAE392;
+}
+
+/* hero Info  */
+.hero .heroInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .heroInfo h1 {
+    font-size: 4.5rem;
+}
+.hero .heroInfo .heroDesc {
+    display: none;
+
+}
+
+.hero .heroInfo span {
+    display: flex;
+    align-items: center;
+}
+
+.hero .heroInfo span img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.hero video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* hero Input */
+
+.heroInput {
+    background-color: #fff;
+    position: absolute;
+    top: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+}
+
+.heroInput .wrapper {
+    display: flex;
+    padding: 1rem;
+}
+
+.heroInput button {
+    height: 75px;
+    border-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+}
+
+.heroInput .inputBox {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1rem;
+    border-left: 1px solid #c2c2c2;
+}
+.heroInput .inputBox:first-child {
+    border-left:none;
+}
+
+.heroInput .cityBox {
+    border-left: 0px solid #c2c2c2;
+    padding-left: 0;
+}
+
+.heroInput .inputBox label {
+    font-size: .8rem;
+    font-weight: 600;
+    color: tomato;
+    margin-bottom: 5px;
+}
+
+.heroInput .inputBox .city {
+    width: 120px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.heroInput .inputBox .date {
+    width: 120px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hero .plane {
+    position: absolute;
+    top:0px;
+    left:220px;
+    height: 280px;
+    width: 280px;
+}
+
+.heroInput .inputBox .price {
+    width: 120px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+   
+    .hero .heroInfo h1 {
+        font-size: 3rem !important;
+    }
+    .hero .heroInfo .heroDesc {
+        display: initial;
+        text-align: center;
+        font-size: 1rem !important;
+        margin-top: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .heroInput {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        overflow: visible !important;
+        width: 100%;
+    }
+    .heroInput .wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+
+    .heroInput button {
+        width: 100%;
+        height: 50px !important;
+        border-radius: 0 !important;
+    }
+    .heroInput .inputBox{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem;
+        border: none !important;
+        border-bottom: 1px solid #c2c2c2 !important;
+    }
+    .heroInput .inputBox .city,
+    .heroInput .inputBox .date,
+    .heroInput .inputBox .price
+    {
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: fit-content !important;
+        display: flex !important;
+        flex-direction: column;
+     
+    }
+    .heroImg {
+        width:100%px !important;
+        position: relative;
+        margin-left: 0;
+    }
+    .heroImg .imgCircle {
+        display: initial;
+        position: absolute;
+        border-radius: 8px;
+        width: 100%;
+        height: 70%;
+        z-index: -1;
+        background-color: #FAE392;
+    }
+    .hero .heroInfo {
+        order: 2;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .hero .heroInfo .heroDesc {
+        display: initial;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+    .heroInput {
+        order:3;
+        width: 100%;
+        position: relative;
+        margin-top: 30px;
+        overflow: visible;
+    }
+    .heroInput .wrapper {
+        flex: 2;
+        padding: 1rem;
+        justify-content: space-between;
+    }
+    .heroInput .inputBox {
+        flex-basis: 33%;
+        display: flex;
+        flex-direction: column;
+        padding-inline: 1rem;
+        border-left: 1px solid #c2c2c2;
+    }
+   
+    .heroInput button {
+        height: 75px;
+        border-radius: 0;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        cursor: pointer;
+    }
+    .heroInput .inputBox {
+        display: flex;
+        flex-direction: column;
+        padding-inline: .5rem;
+        border-left: 1px solid #c2c2c2;
+    }
+    .hero .plane {
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .hero {
+        position: relative;
+        height: 70vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        align-items: center;
+    }
+    .heroImg {
+        width:100%;
+        position: relative;
+        margin-left: 0;
+    }
+    .hero .heroInfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero .heroInfo h1 {
+        font-size: 4rem;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}

@@ -1,0 +1,74 @@
+.newslatter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+
+}
+.newslatter h1{
+    text-align: center;
+}
+
+.newslatter .newslatterInputbox {
+    display: flex;
+    width: 50%;
+    height: 49px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.newslatter .newslatterInputbox input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding-inline: 20px;
+}
+
+.newslatter .newslatterInputbox button {
+    border-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+
+@media only screen and (max-width: 400px) {
+    .newslatter .newslatterInputbox {
+        width: 100% ;
+        overflow: unset;
+    }
+
+    .newslatterInputbox button{
+        padding: 10px;
+    }
+    .newslatter .newslatterInputbox input {
+        width: 70px;
+        
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .newslatter .newslatterInputbox {
+        width: 90% ;
+
+    }
+    .newslatterInputbox button{
+        padding: 15px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .newslatter .newslatterInputbox {
+        width: 80%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}

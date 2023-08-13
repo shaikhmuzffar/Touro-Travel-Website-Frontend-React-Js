@@ -1,0 +1,687 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: auto;
+    width: 100%;
+}
+
+.placeInformationSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* --------------- placeInformationSection_Info --------------- */
+
+.placeInformationSection_Info {
+    position: relative;
+    height: 80vh;
+    border: 1px solid;
+    width: 100%;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0)), url(../../images/placeInfo/italy7.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-position: 25% 40%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.placeInformationSection_Info h1 {
+    color: #fff;
+    margin-left: 5%;
+    line-height: 70px;
+}
+
+.placeInformationSection_Info h1:first-child {
+    letter-spacing: 1px;
+    font-size: 5rem;
+}
+
+.placeInformationSection_Info h1:nth-child(2) {
+    font-size: 2rem;
+}
+
+.placeInformationSection_Info a {
+    margin-left: 5%;
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.placeInformationSection_Info a:hover {
+    gap: 15px;
+}
+
+.placeInformationSection_Info a:hover span {
+    text-decoration: underline;
+}
+
+/* ----------------- placeInformationSection_InputBox-------------- */
+
+/* calender icon*/
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../../images/placeInfo/schedule.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+
+.placeInformationSection_InputBox {
+    margin-top: -40px !important;
+    position: relative;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 11.5fr .3fr;
+    background-color: #ffff;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 15px !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* placeInformationSection_InputBoxRow */
+.placeInformationSection_InputBoxRow {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.placeInformationSection_InputBoxRow_cityInputField {
+    /* border: 1px solid; */
+    height: 100%;
+}
+
+.placeInformationSection_InputBoxRow_cityInputField input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #0000003f;
+    font-size: 1.2rem;
+}
+
+/* calender */
+.placeInformationSection_InputBoxRow_calenderBox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 100%;
+    border: none;
+}
+
+.placeInformationSection_InputBoxRow_calenderBox i {
+    font-size: 1.2rem;
+    font-weight: 700;
+    opacity: .4;
+}
+
+.calenderInputField,
+.calenderInputField input {
+    height: 100%;
+    outline: none;
+    padding: 2px;
+    
+}
+.calenderInputField input {
+    border: 1px solid #0000003f;
+}
+
+/* placeInformationSection_InputBoxRow_peopleInputField */
+.placeInformationSection_InputBoxRow_peopleInputField {
+    border: 1px solid #0000003f;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.placeInformationSection_InputBoxRow_peopleInputField div {
+    width: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #0000003f;
+}
+
+.placeInformationSection_InputBoxRow_peopleInputField div i {
+    font-size: 20px;
+    color: #00000060;
+}
+
+.placeInformationSection_InputBoxRow_peopleInputField input {
+    padding: 10px 5px 5px;
+    outline: none;
+    width: 80px;
+    border: none;
+    padding-inline-start: 8px;
+}
+
+.placeInformationSection_InputBox_submit {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    background-color: #1DA1F2;
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 2px;
+    line-height: 18px;
+}
+
+.placeInformationSection_InputBox_submit span {
+    display: none;
+    font-size: 1rem;
+}
+
+/* placeInformationSection_popularCitiesSection */
+.placeInformationSection_popularCitiesSection {
+    margin-top: 40px !important;
+}
+
+.placeInformationSection_popularCitiesSection>h2 {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.placeInformationSection_popularCitiesSection_city {
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+
+.placeInformationSection_popularCitiesSection_city img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cityImgOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .25), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    height: 100%;
+    width: 100%;
+}
+
+.cityInfo {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+    color: #fff;
+}
+
+.cityInfo h2 {
+    font-size: 1.2rem;
+}
+
+.cityInfo span {
+    font-size: .8rem;
+}
+
+/* ------------------ placeInformationSection_Description ---------------- */
+.placeInformationSection_Description {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 4rem;
+}
+
+/* ------- left box ------- */
+.placeInformationSection_DescriptionLeftBox {}
+
+/* ---- feature section ---- */
+.placeInformationSection_DescriptionLeftBox_Features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 2.5rem;
+    border: none;
+    border-top: 1px solid #0000003f;
+    border-bottom: 1px solid #0000003f;
+}
+
+/* feature */
+.placeInformationSection_DescriptionLeftBox_Feature {
+    display: flex;
+    gap: 15px;
+}
+
+.placeInformationSection_DescriptionLeftBox_FeatureTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.placeInformationSection_DescriptionLeftBox_FeatureTitle>span:first-child {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.placeInformationSection_DescriptionLeftBox_FeatureTitle>span:last-child {
+    font-size: .9rem;
+}
+
+/* -------- placeInformationSection_DescriptionLeftBox_PlaceDesc ----------*/
+.placeInformationSection_DescriptionLeftBox_PlaceDesc {
+    padding-block: 2.5rem;
+    /* border-top: 1px solid #0000003f; */
+}
+
+/* placeInformationSection_DescriptionLeftBox_PlacesVisit */
+.placeInformationSection_DescriptionLeftBox_PlacesVisit {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-block: 2.5rem;
+    border: none;
+    border-bottom: 1px solid #0000003f;
+}
+
+.placeInformationSection_DescriptionLeftBox_PlacesVisit_Places {
+
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    gap: 2rem;
+}
+
+.placeInformationSection_DescriptionLeftBox_PlacesVisit_Place {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.placeInformationSection_DescriptionLeftBox_PlacesVisit_Place:last-child::after {
+    content: "more";
+    color: #fff;
+    position: absolute;
+    font-size: 1.2rem;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 200px;
+    background-color: #00000060;
+    height: 100%;
+    width: 100%;
+}
+
+.placeInformationSection_DescriptionLeftBox_PlacesVisit_Place img {
+    width: 100%;
+    height: 100%;
+}
+
+/* right box */
+.placeInformationSection_DescriptionRightBox {
+    height: fit-content;
+    position: sticky;
+    top: 90px;
+}
+
+/* placeInformationSection_DescriptionRightBox_Reviews */
+.placeInformationSection_DescriptionRightBox_Reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 2rem;
+    border-bottom: 1px solid #0000003f;
+}
+
+.placeInformationSection_DescriptionRightBox_Reviews h3 {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.placeInformationSection_DescriptionRightBox_Reviews h3:hover {
+    text-decoration: underline;
+}
+
+.placeInformationSection_DescriptionRightBox_Reviews h3 i {
+    font-weight: 600;
+    font-size: .9rem;
+    opacity: .5;
+}
+
+.placeInformationSection_DescriptionRightBox_Reviews_stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+}
+
+/* stat bar  */
+.placeInformationSection_DescriptionRightBox_Reviews_stat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.placeInformationSection_DescriptionRightBox_Reviews_stat .state_title {
+    font-size: .9rem;
+    text-transform: capitalize;
+
+}
+
+.placeInformationSection_DescriptionRightBox_Reviews_stat .state_bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.placeInformationSection_DescriptionRightBox_Reviews_stat .state_bar .stat_bar_line {
+    position: relative;
+    width: 120px;
+}
+
+.placeInformationSection_DescriptionRightBox_Reviews_stat .state_bar .stat_bar_line p {
+    position: absolute;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.placeInformationSection_DescriptionRightBox_Reviews_stat .state_bar .stat_bar_line .stat_bar_lineFront {
+    background-color: #0000003f;
+    width: 100%;
+}
+
+.placeInformationSection_DescriptionRightBox_Reviews_stat .state_bar .stat_bar_line .stat_bar_lineBack {
+    background-color: #000;
+    width: 96%;
+}
+
+/* rating */
+.placeInformationSection_DescriptionRightBox_Reviews_stat .state_bar .stat_bar_Number {
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+/* ---------- placeInformationSection_DescriptionRightBox_userReview_userInfo ---------- */
+
+.placeInformationSection_DescriptionRightBox_userReviews {
+    padding-block:2rem ;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #0000003f;
+    padding-bottom: 20px;
+}
+
+.placeInformationSection_DescriptionRightBox_userReview {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 0.8rem;
+}
+
+.placeInformationSection_DescriptionRightBox_userReview_userInfo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.placeInformationSection_DescriptionRightBox_userReview_userInfo img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.placeInformationSection_DescriptionRightBox_userReview_userInfo .userNameAndDate {
+    display: flex;
+    gap: 4px;
+    letter-spacing: .3px;
+    flex-direction: column;
+}
+
+.placeInformationSection_DescriptionRightBox_userReview_userInfo .userNameAndDate span:first-child {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.placeInformationSection_DescriptionRightBox_userReview_userInfo .userNameAndDate span:last-child {
+    font-size: .8rem;
+}
+
+/* usercomment */
+.placeInformationSection_DescriptionRightBox_userReview_userComment {
+    font-size: .8rem;
+    line-height: 23px;
+    opacity: .9;
+    letter-spacing: .2px;
+}
+
+.placeInformationSection_DescriptionRightBox_userReviews_showReviews {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 30px;
+    align-self: flex-start;
+    border-radius: 6px;
+    border: 1px solid #000000a2;
+    margin-top: 20px;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+.placeInformationSection_DescriptionRightBox_userReviews_showReviews:hover {
+    background-color: #f8f8f8;
+
+}
+
+/*  placeInformationSection_DescriptionRightBox_BookNow_form*/
+
+.placeInformationSection_DescriptionRightBox_BookNow {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-block: 2rem;
+
+}
+
+.placeInformationSection_DescriptionRightBox_BookNow_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1.2rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.placeInformationSection_DescriptionRightBox_BookNow_form_priceRows {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #0000003f;
+    padding-bottom: 1.5rem;
+    gap: 15px;
+}
+
+.placeInformationSection_DescriptionRightBox_BookNow_priceRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.placeInformationSection_DescriptionRightBox_BookNow_priceRow span:first-child {
+    text-decoration: underline;
+}
+
+.placeInformationSection_DescriptionRightBox_BookNow_totalRow {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.btn-Primary.placeInformationSection_DescriptionRightBox_BookNow_form_button {
+    text-align: center;
+    padding: 12px;
+}
+
+/* ------------ placeInformationSection_Location -------------- */
+.placeInformationSection_Location {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 2rem !important;
+    border-bottom: 1px solid #0000003f;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .placeInformationSection_DescriptionLeftBox_PlacesVisit_Places {
+        grid-template-columns: repeat(1, 6fr);
+    }
+    .placeInformationSection_DescriptionLeftBox_FeatureTitle>span:last-child {
+        font-size: .9rem;
+        white-space: nowrap; 
+        width: 250px; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+    .placeInformationSection_InputBoxRow_cityInputField {
+        width: 100%;
+    }
+    .placeInformationSection_InputBoxRow_calenderBox {
+        flex-direction: column;
+    }
+    .calenderInputField, .calenderInputField input {
+        width: 100%;
+    }
+    .placeInformationSection_Info {
+        height: 60vh;
+    }
+  
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .calenderInputField, .calenderInputField input,.placeInformationSection_InputBoxRow_peopleInputField input {
+        width: 100%;
+        height: 40px;
+    }
+    .placeInformationSection_Info{
+        background-image: url(../../images/placeInfo/italy7.jpg);
+    }
+    .placeInformationSection_Info h1{
+        letter-spacing: 1px;
+        font-size: 5rem;
+        display: none;
+    }
+    .placeInformationSection_Info a {
+     display: none;
+    }
+    .placeInformationSection_DescriptionRightBox_BookNow_priceRow span, .placeInformationSection_DescriptionRightBox_BookNow_totalRow {
+        font-size: .9rem !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .placeInformationSection_DescriptionLeftBox_Features {
+        gap: 40px;
+    }
+    .placeInformationSection_Description {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 4rem;
+        
+    }
+    .placeInformationSection_InputBox {
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        gap: 20px;
+        align-items: center;
+    }
+    .placeInformationSection_InputBoxRow {
+        display: grid;
+        grid-template-columns: repeat(1, 4fr) !important;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .placeInformationSection_InputBox_submit {
+        /* right: 20px;
+        /* bottom: 20px; */
+        align-self:self-end;
+        position: relative;
+        right: unset;
+        left: unset;
+        bottom: unset;
+        transform: none;
+        background-color: #1DA1F2;
+        display: flex;
+        align-items: center;
+        padding: 10px 60px;
+        gap: 6px;
+    }
+    .placeInformationSection_InputBox_submit i,span{
+        height: 20px;
+    }
+
+    .placeInformationSection_InputBox_submit span {
+        display: initial;
+    }
+
+    .placeInformationSection_InputBoxRow_peopleInputField input {
+        padding: 10px 5px 5px;
+        width: 120px;
+
+    }
+
+    .placeInformationSection_InputBoxRow {
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+        align-items: center;
+        gap: 2rem;
+    }
+    .btn-Primary.placeInformationSection_DescriptionRightBox_BookNow_form_button {
+        align-self: flex-start;
+        padding-inline:30px ;
+    }
+    .placeInformationSection_DescriptionRightBox_BookNow_priceRow span, .placeInformationSection_DescriptionRightBox_BookNow_totalRow {
+        font-size: 1.2rem;
+    }
+    .placeInformationSection_DescriptionRightBox_BookNow_form {
+        gap: 30px;
+        padding: 1.2rem 1.5rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .placeInformationSection_Description {
+        gap: 2rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}

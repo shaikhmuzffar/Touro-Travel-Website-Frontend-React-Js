@@ -1,0 +1,199 @@
+body{
+    background-color: #fff;
+}
+.formSection {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 400px;
+    padding-block: 2rem;
+
+}
+.bgOverlay{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    background:url('../../images/login/bg.jpg');
+    opacity: .05;
+}
+
+.form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form .formLogo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.formTitleAndDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.formTitle {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.formDesc {
+    font-size: .8rem;
+    width: 70%;
+    text-align: center;
+}
+
+.loginSignUpSwitch {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.loginSignUpSwitchBox {
+    position: relative;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.205);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: .5;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 15px 10px;
+}
+
+.loginSignUpSwitchBox.active {
+    color: #1DA1F2;
+    opacity: 1;
+}
+
+.loginSignUpSwitchBox.active::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-radius: 5px;
+    width: 100%;
+    top: 100%;
+    background-color: #1DA1F2;
+}
+
+.loginSignUpSwitchLogin i,
+.loginSignUpSwitchSignin i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+
+/* form box */
+.formBox {
+    width: 90%;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 25px;
+}
+.formInputBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-block: 1rem;
+}
+.radio{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+}
+.checkboxInfo{
+    font-size: .8rem;
+    line-height: 22px;
+    opacity: .7;
+}
+.checkboxInfo span{
+    color: #1DA1F2;
+}
+.inputField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+}
+
+.inputField input {
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    /* transition: all .3s ease-in-out; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+}
+
+.inputField label {
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.575);
+}
+
+.inputField input:focus {
+    border-bottom: 4px solid #1da0f2;
+}
+
+.inputFieldBox {
+    display: grid;
+    grid-template-columns: repeat(2,190px);
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.inputFieldBox>.inputField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 0;
+    padding-block-start: 1rem;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .inputFieldBox {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {}
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (max-width: 992px) {}
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (max-width: 1200px) {} 

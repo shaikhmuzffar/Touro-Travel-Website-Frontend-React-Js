@@ -1,0 +1,212 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  /* ------------------------------------------ */
+
+  ul {
+      list-style: none;
+  }
+
+  .navSection {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 1000;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  }
+
+  .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+  }
+
+  /* nav logo */
+  .nav .navLogo {
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+      font-weight: 800;
+      text-decoration: none;
+      color: #000;
+  }
+
+  .nav .navLogo img {
+      width: 24px;
+      margin-right: 8px;
+  }
+
+  /* navbar */
+  .navbar {
+      display: flex;
+      padding: 5px;
+      column-gap: 10px;
+  }
+
+  .navbar .navlink {
+      position: relative;
+      padding: 8px 12px;
+  }
+
+  .navbar .navlink .navlinkItem {
+      text-decoration: none;
+      font-size: .9rem;
+      font-weight: 700;
+      color: #000;
+      opacity: 0.6;
+      transition: all .3s ease-in-out;
+
+  }
+  .navLoginMob{
+    display: none;
+  }
+
+  .navbar .navlink .navlinkItem:hover {
+      color: tomato;
+      opacity: 1;
+      transition: all .3s ease-in-out;
+  }
+
+  .navbar .navlink .navlinkItem.active {
+      color: tomato;
+      opacity: 1;
+      position: relative;
+  }
+
+  .navbar .navlink .navlinkItem.active::after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      border-radius: 3px;
+      width: 50%;
+      background-color: tomato;
+      top: 125%;
+      left: 0;
+      transition: width .3s ease-in-out;
+  }
+
+  .navbar .navlink .navlinkItem.active:hover::after {
+      width: 70%;
+  }
+
+  .navLoginMobile{
+    display: none;
+  }
+  /* nav User Actions */
+  .navUserActions {
+      display: flex;
+      align-items: center;
+  }
+
+  .fa-solid.fa-xmark {
+      font-size: 1.5rem;
+      display: none;
+  }
+
+  .navUserActions .navbarIcon {
+      font-size: 1.5rem;
+      display: none;
+  }
+
+  /* .navUserActions */
+
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 400px) {}
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 600px) {}
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+      .navUserActions .navLogin {
+          display: none;
+      }
+
+      .navUserActions .navbarIcon {
+          display: block;
+      }
+
+      .fa-solid.fa-xmark {
+          font-size: 1.5rem;
+          display: initial;
+      }
+
+      .navLoginMobile {
+          display: initial;
+      }
+      .navLoginMob{
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+      }
+
+
+      /* navbar mobile */
+      .navbar {
+          position: absolute;
+          width: 100%;
+          top: 99%;
+          left: -100%;
+          flex-direction: column;
+          background-color: #fff;
+          padding: 0px 0px;
+          transition: all .4s ease-in-out;
+          padding: 10px;
+          z-index: 500;
+           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 
+          60px -30px;      
+
+      }
+
+      .navbar.navbarMobile {
+          left: 0;
+      }
+
+      .navbar .navlink {
+          padding: 10px ;
+          width: 100%;
+          border-radius: 4px;
+      }
+
+      .navbar .navlink .navlinkItem {
+          display: block;
+          padding: 10px;
+          width: 100%;
+          text-align: center;
+          font-size: 1.2rem;
+      }
+
+      .navbar .navlink .navlinkItem.active::after {
+          display: none;
+      }
+
+      .navbar .btn-Primary {
+          border-radius: 0px;
+      }
+
+      .navbar .navlink:hover {
+          background-color: #f3f6fa;
+      }
+
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (max-width: 992px) {}
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (max-width: 1200px) {}
+
+
+
+
